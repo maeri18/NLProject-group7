@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat for support</title>
+    <link href="../static/styles_and_script/styles.css" rel="stylesheet" type="text/css"/> 
+    <script src="../static/styles_and_script/jquery-3.7.1.js"></script>
+</head>
+<body>       
+
+ <div id="div-title">
+    <h1><b>Customer Support Chatbot</b></h1>
+ </div>
+
+<div id="div-chat-area">
+   
+    <ul id="chat-area">
+    </ul>
+</div>
+<div id="input-div">
+    <input type="text" id="query" name="query" placeholder="Enter a message!"/>
+</div>
+
+
+    
+<a href="/" class="button-link"><div class="button-div"><p>Go to main page</p></div></a>
+
+
+
+<script>
+    $(document).ready(function(){
+        $("#query").keyup(function(event){
+            
+            if (event.key === "Enter" || event.keyCode === 13)
+                {
+                    
+                    let query = $("#query").val();
+                   
+                    $("#chat-area").append(`<li class="question">&nbsp${query}</li>`);
+
+                    $("#query").val("");
+
+                    $.post("/get_response", {query:query}, function(response, status){
+
+                    
+                        if(status==="success")
+                        {
+
+                            setTimeout(()=>{$("#chat-area").append(`<li class="response"> 🤖 ${response}</li>`);},300);
+                        }
+                        else{
+                            alert("Could get the bot's response");
+                        }
+        })
+                }
+        })
+        
+
+    })
+</script>
+ 
+    
+</body>
+</html>
