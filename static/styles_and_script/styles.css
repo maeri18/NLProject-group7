@@ -1,0 +1,145 @@
+body{
+    background-color: #dcc6ff;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+#title{
+    color: #49108B;
+    font-size:35px;
+    text-align: center;
+    font-weight:400;
+    margin: auto;
+    padding: 30px;
+    width: 50%;
+    font-family: Verdana, Geneva,Tahoma, sans-serif;
+}
+.button-div{
+    background-color: #49108B;
+    color: rgb(253, 219, 253);
+    font-size:25px;
+    font-weight:150;
+    margin: auto auto 30px auto;
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    font-family: Verdana, Geneva,Tahoma, sans-serif;
+}
+
+.button-div p{
+    text-align: center;
+    width: 100%;
+    line-height: 50px;
+}
+
+.button-link{
+    text-decoration: none;
+
+}
+
+#main-div {
+    background-color: #F3F8FF;
+    height: 300em;
+    width:100%;
+    margin:auto;
+}
+
+#general-info{
+    color: #591ca9;
+    font-size:23px;
+    text-align: center;
+    font-weight:100;
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    font-family: Verdana, Geneva,Tahoma, sans-serif;
+
+}
+
+#info-description{
+    color: black;
+    font-size:10px;
+    text-align: center ;
+    font-weight:50;
+    margin: auto;
+    width: 50%;
+    font-family: Verdana, Geneva,Tahoma, sans-serif;
+
+}
+
+#div-chat-area{
+    width: 90%;
+    height: 500px;
+    overflow: auto;
+    background-color: #F3F8FF;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 100%;
+}
+#chat-area{
+    max-width: 100%;
+}
+
+#div-title{
+    color: #F3F8FF !important;
+    background-color: #49108B;   
+    width: 90%;
+    margin: auto;
+}
+
+#div-title h1{
+    font-size:35px;
+    text-align: center;
+    font-weight:400;
+    margin: auto;
+    padding: 30px;
+    width: 50%;
+    font-family: Verdana, Geneva,Tahoma, sans-serif;
+}
+
+#input-div{
+    text-align: center;
+    
+}
+#query{
+    margin: auto;
+    width: 80%;
+    height: 30px;
+    color: black;
+    font-size:30px;
+    font-weight:50;
+
+}
+
+.response{
+    list-style-type: none;
+    color: white;
+    background-color: #49108B;
+    width: 45%;
+    text-wrap: pretty;
+    max-width: 100%;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.question{
+    list-style-type: none;
+    color: black;
+    background-color: #dcc6ff;
+    margin: 10px 10px 10px 50% ;
+    text-wrap: pretty;
+    width:45%; 
+    max-width: 100%;
+    border-radius: 10px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    
+}
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
