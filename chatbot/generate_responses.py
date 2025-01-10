@@ -7,7 +7,7 @@ from langchain_chroma import Chroma
 
 from langchain_huggingface import HuggingFaceEmbeddings
 
-llm = ChatOpenAI(model="gpt-4o-mini", api_key="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")
+llm = ChatOpenAI(model="gpt-4o-mini", api_key="ProvideOwnKey")
 
 
 prompt_template = hub.pull("rlm/rag-prompt")
